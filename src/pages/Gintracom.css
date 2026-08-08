@@ -675,3 +675,55 @@
   }
 
 }
+/* =========================================================
+   GINTRACOM — NARROW MOBILE FIX
+========================================================= */
+
+@media (max-width: 430px) {
+
+  .gt-case {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  .gt-hero-info,
+  .gt-community-header,
+  .gt-system-grid {
+    width: 100%;
+    max-width: 100%;
+
+    box-sizing: border-box;
+  }
+
+
+  .gt-title {
+    max-width: 100%;
+
+    font-size: 18vw !important;
+
+    line-height: 0.78;
+  }
+
+
+  .gt-community-stat h2 {
+    max-width: 100%;
+
+    font-size: 24vw !important;
+  }
+
+
+  .gt-system-title h2 {
+    max-width: 100%;
+
+    font-size: 13.5vw !important;
+  }
+
+
+  .gt-result-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+}

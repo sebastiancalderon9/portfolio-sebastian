@@ -2969,3 +2969,128 @@ body {
   }
 
 }
+/* =========================================================
+   MOBILE WIDTH SYSTEM — FINAL FIX
+   Corrige contenido desplazado / cortado a la derecha
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* CONTENEDORES PRINCIPALES */
+
+  .portfolio,
+  .case-study,
+  .sc-case,
+  .gt-case,
+  .op-case {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  /* LOS HIJOS DE GRID/FLEX DEBEN PODER ENCOGER */
+
+  .hero-main > *,
+  .hero-bottom > *,
+  .work-intro > *,
+  .projects-grid > *,
+  .about-main > *,
+  .process-grid > *,
+  .case-meta > *,
+  .case-intro-grid > *,
+  .case-strategy-grid > *,
+  .case-work-title > *,
+  .portfolio-media-grid > *,
+  .sc-performance-title > *,
+  .sc-strategy-content > *,
+  .gt-community-header > *,
+  .gt-system-grid > *,
+  .op-intro-grid > *,
+  .op-archive-heading > *,
+  .op-grid > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+
+  /* =====================================================
+     SECCIONES QUE CONVERTIMOS EN CARDS
+     100% - 20px = margen real de 10px por lado
+  ===================================================== */
+
+  .case-intro,
+  .case-strategy,
+  .case-work,
+  .case-closing,
+
+  .sc-performance,
+  .sc-strategy,
+  .sc-closing,
+
+  .gt-community,
+  .gt-system,
+  .gt-work,
+  .gt-closing,
+
+  .op-intro,
+  .op-archive,
+  .op-statement,
+
+  .capabilities-section,
+  .contact-section,
+  .next-project,
+  .op-final {
+
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+
+    box-sizing: border-box;
+  }
+
+
+  /* IMAGEN GRANDE ENTRE SECCIONES */
+
+  .case-media-full {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+
+    box-sizing: border-box;
+  }
+
+
+  /* MEDIOS */
+
+  img,
+  video {
+    max-width: 100%;
+  }
+
+
+  .media-item,
+  .interactive-video,
+  .op-media,
+  .sc-result-image,
+  .gt-result-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* TEXTOS GRANDES */
+
+  .case-title,
+  .case-intro h2,
+  .case-work-title h2,
+  .about-title,
+  .contact-title {
+    max-width: 100%;
+  }
+
+}
