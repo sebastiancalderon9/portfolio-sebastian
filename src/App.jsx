@@ -737,56 +737,99 @@ function Home() {
           CAPABILITIES
       =================================== */}
 
-      <section className="capabilities-section">
+     {/* ===================================
+    CAPABILITIES
+=================================== */}
 
-        <div className="section-label reveal">
+<section className="capabilities-section">
+
+  <div className="section-label reveal">
+
+    <span>
+      03
+    </span>
+
+    <span>
+      CAPABILITIES
+    </span>
+
+  </div>
+
+
+  <div className="capabilities-list">
+
+    {[
+      {
+        title: 'SOCIAL MEDIA STRATEGY',
+        description:
+          'Estrategia de contenido, construcción de calendarios, definición de formatos, audiencias y oportunidades para hacer crecer la presencia digital de una marca.'
+      },
+
+      {
+        title: 'CREATIVE DIRECTION',
+        description:
+          'Conceptualización de campañas, dirección visual, ideas creativas y construcción de sistemas de contenido alineados con los objetivos de cada proyecto.'
+      },
+
+      {
+        title: 'DESIGN & CONTENT',
+        description:
+          'Diseño de piezas publicitarias, contenido para redes sociales, campañas visuales, copy y adaptación de conceptos a diferentes formatos.'
+      },
+
+      {
+        title: 'VIDEO & UGC',
+        description:
+          'Concepto, guion, grabación, edición y creación de contenido audiovisual pensado para redes sociales y comunicación digital.'
+      },
+
+      {
+        title: 'META ADS & PERFORMANCE',
+        description:
+          'Creatividad orientada a pauta, análisis de resultados, pruebas de conceptos y optimización basada en comportamiento y performance.'
+      },
+
+      {
+        title: 'AI & DIGITAL EXPERIENCES',
+        description:
+          'Integración de inteligencia artificial en procesos creativos, diseño, producción audiovisual, contenido y nuevas experiencias digitales.'
+      }
+
+    ].map((skill, index) => (
+
+      <details
+        className="capability capability-item reveal"
+        key={skill.title}
+      >
+
+        <summary>
 
           <span>
-            03
+            0{index + 1}
           </span>
 
-          <span>
-            CAPABILITIES
+          <h3>
+            {skill.title}
+          </h3>
+
+          <span className="capability-toggle">
+            +
           </span>
 
-        </div>
+        </summary>
 
 
-        <div className="capabilities-list">
+        <p className="capability-description">
+          {skill.description}
+        </p>
 
-          {[
-            'SOCIAL MEDIA STRATEGY',
-            'CREATIVE DIRECTION',
-            'DESIGN & CONTENT',
-            'VIDEO & UGC',
-            'META ADS & PERFORMANCE',
-            'AI & DIGITAL EXPERIENCES'
-          ].map((skill, index) => (
+      </details>
 
-            <div
-              className="capability reveal"
-              key={skill}
-            >
+    ))}
 
-              <span>
-                0{index + 1}
-              </span>
+  </div>
 
-              <h3>
-                {skill}
-              </h3>
-
-              <span>
-                ↗
-              </span>
-
-            </div>
-
-          ))}
-
-        </div>
-
-      </section>
+</section>
 
 
 
@@ -850,7 +893,53 @@ function Home() {
 
         </div>
 
+<div className="contact-actions reveal">
 
+
+  <a
+    href="mailto:09sacm@gmail.com"
+    className="contact-direct-link"
+  >
+
+    <span>
+      EMAIL
+    </span>
+
+    <strong>
+      09sacm@gmail.com
+    </strong>
+
+    <em>
+      ↗
+    </em>
+
+  </a>
+
+
+
+  <a
+    href="https://wa.me/573233004012"
+    target="_blank"
+    rel="noreferrer"
+    className="contact-direct-link"
+  >
+
+    <span>
+      WHATSAPP
+    </span>
+
+    <strong>
+      +57 323 300 4012
+    </strong>
+
+    <em>
+      ↗
+    </em>
+
+  </a>
+
+
+</div>
 
         <footer className="footer">
 

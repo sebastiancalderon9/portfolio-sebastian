@@ -674,3 +674,81 @@
   }
 
 }
+/* =========================================================
+   FINAL MOBILE TYPOGRAPHY FIX
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .sc-case {
+    width: 100%;
+
+    max-width: 100vw;
+
+    overflow-x: hidden;
+  }
+
+
+  /* SEÑOR CONSTRUCTOR */
+
+  .sc-title {
+    width: 100%;
+
+    max-width: 100%;
+
+    font-size:
+      clamp(50px, 13.8vw, 88px);
+
+    line-height: 0.8;
+
+    letter-spacing: -0.075em;
+  }
+
+  .sc-title span {
+    white-space: nowrap;
+  }
+
+
+  /* +$1.000M */
+
+  .sc-performance-title {
+    width: 100%;
+  }
+
+  .sc-performance-title > div {
+    min-width: 0;
+  }
+
+  .sc-performance-title h2 {
+    width: 100%;
+
+    max-width: 100%;
+
+    font-size:
+      clamp(66px, 18.5vw, 115px);
+
+    line-height: 0.76;
+
+    letter-spacing: -0.085em;
+
+    white-space: nowrap;
+  }
+
+  .sc-performance-title h2 span {
+    display: inline;
+  }
+
+}
+
+
+@media (max-width: 390px) {
+
+  .sc-title {
+    font-size: 13.2vw;
+  }
+
+  .sc-performance-title h2 {
+    font-size: 18vw;
+  }
+
+}
