@@ -31,10 +31,6 @@ function SenorConstructor() {
     <main className="case-study sc-case">
 
 
-      {/* ===================================
-          NAV
-      =================================== */}
-
       <nav className="case-nav">
 
         <Link
@@ -49,16 +45,14 @@ function SenorConstructor() {
           to="/"
           className="case-back"
         >
-          ← BACK TO WORK
+          ← VOLVER AL INICIO
         </Link>
 
       </nav>
 
 
 
-      {/* ===================================
-          HERO
-      =================================== */}
+      {/* HERO */}
 
       <section className="case-hero sc-hero">
 
@@ -77,7 +71,7 @@ function SenorConstructor() {
         <div className="case-hero-info">
 
           <div className="case-index">
-            02 / CASE STUDY
+            02 / CASO DE ESTUDIO
           </div>
 
 
@@ -96,14 +90,12 @@ function SenorConstructor() {
 
             <div>
 
-              <span>
-                ROLE
-              </span>
+              <span>ROL</span>
 
               <p>
-                Creative Strategy<br />
-                Performance Creative<br />
-                Content & Design
+                Estrategia creativa<br />
+                Creatividad para performance<br />
+                Contenido y diseño
               </p>
 
             </div>
@@ -111,14 +103,12 @@ function SenorConstructor() {
 
             <div>
 
-              <span>
-                FOCUS
-              </span>
+              <span>ENFOQUE</span>
 
               <p>
                 Meta Ads<br />
                 E-commerce<br />
-                Conversion Content
+                Contenido de conversión
               </p>
 
             </div>
@@ -126,14 +116,12 @@ function SenorConstructor() {
 
             <div>
 
-              <span>
-                PROJECT
-              </span>
+              <span>PROYECTO</span>
 
               <p>
-                Product Campaigns<br />
-                Sales Creatives<br />
-                Digital Performance
+                Campañas de producto<br />
+                Creatividades de venta<br />
+                Performance digital
               </p>
 
             </div>
@@ -146,14 +134,12 @@ function SenorConstructor() {
 
 
 
-      {/* ===================================
-          CONTEXT
-      =================================== */}
+      {/* CONTEXTO */}
 
       <section className="case-intro sc-intro">
 
         <div className="case-section-number">
-          01 — CONTEXT
+          01 — CONTEXTO
         </div>
 
 
@@ -161,13 +147,13 @@ function SenorConstructor() {
 
           <h2>
 
-            CREATIVE
+            CREATIVIDAD
 
             <span>
-              THAT
+              QUE
             </span>
 
-            SELLS.
+            VENDE.
 
           </h2>
 
@@ -198,16 +184,14 @@ function SenorConstructor() {
 
 
 
-      {/* ===================================
-          PERFORMANCE RESULT
-      =================================== */}
+      {/* RESULTADOS */}
 
       <section className="sc-performance">
 
         <div className="sc-performance-heading">
 
           <div className="case-section-number">
-            02 — PERFORMANCE
+            02 — RESULTADOS
           </div>
 
 
@@ -216,7 +200,7 @@ function SenorConstructor() {
             <div>
 
               <span className="sc-result-label">
-                JAN — MAY
+                ENE — MAY
               </span>
 
 
@@ -243,7 +227,7 @@ function SenorConstructor() {
 
 
               <span>
-                CREATIVE × PERFORMANCE × E-COMMERCE
+                CREATIVIDAD × PAUTA × E-COMMERCE
               </span>
 
             </div>
@@ -258,6 +242,8 @@ function SenorConstructor() {
           <img
             src={result01}
             alt="Resultados de campañas de Señor Constructor"
+            loading="lazy"
+            decoding="async"
           />
 
         </div>
@@ -266,14 +252,12 @@ function SenorConstructor() {
 
 
 
-      {/* ===================================
-          STRATEGY
-      =================================== */}
+      {/* SISTEMA */}
 
       <section className="sc-strategy">
 
         <div className="case-section-number">
-          03 — THE SYSTEM
+          03 — EL SISTEMA
         </div>
 
 
@@ -282,31 +266,25 @@ function SenorConstructor() {
           <div className="sc-strategy-title">
 
             <span>
-              PERFORMANCE LOOP
+              CICLO DE OPTIMIZACIÓN
             </span>
 
 
             <h2>
 
-              PRODUCT
+              PRODUCTO
 
-              <span>
-                ↓
-              </span>
+              <span>↓</span>
 
-              CREATIVE
+              CREATIVIDAD
 
-              <span>
-                ↓
-              </span>
+              <span>↓</span>
 
-              TEST
+              PRUEBA
 
-              <span>
-                ↓
-              </span>
+              <span>↓</span>
 
-              SCALE
+              ESCALA
 
             </h2>
 
@@ -319,16 +297,11 @@ function SenorConstructor() {
 
             <div>
 
-              <span>
-                01
-              </span>
-
+              <span>01</span>
 
               <div>
 
-                <h3>
-                  PRODUCT
-                </h3>
+                <h3>PRODUCTO</h3>
 
                 <p>
                   Identificar beneficios,
@@ -344,16 +317,11 @@ function SenorConstructor() {
 
             <div>
 
-              <span>
-                02
-              </span>
-
+              <span>02</span>
 
               <div>
 
-                <h3>
-                  CREATIVE
-                </h3>
+                <h3>CREATIVIDAD</h3>
 
                 <p>
                   Convertir esos argumentos en
@@ -369,16 +337,11 @@ function SenorConstructor() {
 
             <div>
 
-              <span>
-                03
-              </span>
-
+              <span>03</span>
 
               <div>
 
-                <h3>
-                  TEST
-                </h3>
+                <h3>PRUEBA</h3>
 
                 <p>
                   Llevar diferentes ángulos
@@ -394,16 +357,11 @@ function SenorConstructor() {
 
             <div>
 
-              <span>
-                04
-              </span>
-
+              <span>04</span>
 
               <div>
 
-                <h3>
-                  SCALE
-                </h3>
+                <h3>ESCALA</h3>
 
                 <p>
                   Convertir los aprendizajes
@@ -424,14 +382,12 @@ function SenorConstructor() {
 
 
 
-      {/* ===================================
-          SELECTED CREATIVE
-      =================================== */}
+      {/* CREATIVIDAD SELECCIONADA */}
 
       <section className="case-work sc-work">
 
         <div className="case-section-number">
-          04 — SELECTED CREATIVE
+          04 — CREATIVIDAD SELECCIONADA
         </div>
 
 
@@ -439,10 +395,10 @@ function SenorConstructor() {
 
           <h2>
 
-            BUILT
+            HECHO
 
             <span>
-              TO SELL.
+              PARA VENDER.
             </span>
 
           </h2>
@@ -462,42 +418,37 @@ function SenorConstructor() {
         <div className="portfolio-media-grid">
 
 
-          {/* REEL 01 */}
-
           <InteractiveVideo
             src={reel01}
-            label="PERFORMANCE / REEL"
+            label="PAUTA / REEL"
             number="01"
             className="media-vertical"
           />
 
 
-
-          {/* REEL 02 */}
-
           <InteractiveVideo
             src={reel02}
-            label="PRODUCT / REEL"
+            label="PRODUCTO / REEL"
             number="02"
             className="media-vertical"
           />
 
 
 
-          {/* DESIGN 01 */}
-
           <div className="media-item media-square sc-media-item">
 
             <img
               src={design01}
               alt="Creativo publicitario Señor Constructor"
+              loading="lazy"
+              decoding="async"
             />
 
 
             <div className="media-caption">
 
               <span>
-                PERFORMANCE CREATIVE
+                CREATIVIDAD DE PAUTA
               </span>
 
               <span>
@@ -510,20 +461,20 @@ function SenorConstructor() {
 
 
 
-          {/* DESIGN 02 */}
-
           <div className="media-item media-square sc-media-item">
 
             <img
               src={design02}
               alt="Diseño de campaña Señor Constructor"
+              loading="lazy"
+              decoding="async"
             />
 
 
             <div className="media-caption">
 
               <span>
-                PRODUCT CAMPAIGN
+                CAMPAÑA DE PRODUCTO
               </span>
 
               <span>
@@ -541,16 +492,14 @@ function SenorConstructor() {
 
 
 
-      {/* ===================================
-          CLOSING
-      =================================== */}
+      {/* CIERRE */}
 
       <section className="sc-closing">
 
         <div className="sc-closing-small">
 
           <span>
-            CREATIVE STRATEGY
+            ESTRATEGIA CREATIVA
           </span>
 
           <span>
@@ -566,16 +515,16 @@ function SenorConstructor() {
 
         <h2>
 
-          GOOD CREATIVE
+          BUENAS IDEAS
 
           <span>
-            GETS ATTENTION.
+            CAPTAN ATENCIÓN.
           </span>
 
-          GREAT CREATIVE
+          GRANDES IDEAS
 
           <strong>
-            GETS RESULTS.
+            GENERAN RESULTADOS.
           </strong>
 
         </h2>
@@ -584,31 +533,28 @@ function SenorConstructor() {
 
 
 
-      {/* ===================================
-          NEXT PROJECT
-      =================================== */}
+      {/* SIGUIENTE */}
 
-<Link
-  to="/project/gintracom"
-  className="next-project sc-next next-project-clickable"
->
-  <span>
-    NEXT PROJECT
-  </span>
+      <Link
+        to="/project/gintracom"
+        className="next-project sc-next next-project-clickable"
+      >
 
-  <h2>
-    GINTRACOM
-  </h2>
+        <span>
+          SIGUIENTE PROYECTO
+        </span>
 
-  <div>
-    VIEW PROJECT →
-  </div>
-</Link>
+        <h2>
+          GINTRACOM
+        </h2>
+
+        <div>
+          VER PROYECTO →
+        </div>
+
+      </Link>
 
 
-      {/* ===================================
-          FOOTER
-      =================================== */}
 
       <footer className="case-footer">
 
@@ -616,9 +562,8 @@ function SenorConstructor() {
           SEBASTIÁN CALDERÓN © 2026
         </span>
 
-
         <Link to="/">
-          BACK TO HOME ↑
+          VOLVER AL INICIO ↑
         </Link>
 
       </footer>

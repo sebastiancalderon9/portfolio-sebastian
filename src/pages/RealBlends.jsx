@@ -29,7 +29,7 @@ function RealBlends() {
     <main className="case-study">
 
 
-      {/* NAV */}
+      {/* NAVEGACIÓN */}
 
       <nav className="case-nav">
 
@@ -44,7 +44,7 @@ function RealBlends() {
           to="/"
           className="case-back"
         >
-          ← BACK TO WORK
+          ← VOLVER AL INICIO
         </Link>
 
       </nav>
@@ -70,7 +70,7 @@ function RealBlends() {
         <div className="case-hero-info">
 
           <div className="case-index">
-            01 / CASE STUDY
+            01 / CASO DE ESTUDIO
           </div>
 
 
@@ -89,12 +89,12 @@ function RealBlends() {
 
             <div>
 
-              <span>ROLE</span>
+              <span>ROL</span>
 
               <p>
-                Social Media Manager<br />
-                Creative Strategy<br />
-                Content & Design
+                Gestión de redes sociales<br />
+                Estrategia creativa<br />
+                Contenido y diseño
               </p>
 
             </div>
@@ -102,12 +102,12 @@ function RealBlends() {
 
             <div>
 
-              <span>FOCUS</span>
+              <span>ENFOQUE</span>
 
               <p>
-                Social Media<br />
+                Redes sociales<br />
                 E-commerce<br />
-                Performance Creative
+                Creatividad para performance
               </p>
 
             </div>
@@ -115,12 +115,12 @@ function RealBlends() {
 
             <div>
 
-              <span>PROJECT</span>
+              <span>PROYECTO</span>
 
               <p>
-                Brand Content<br />
-                Digital Strategy<br />
-                Creative Direction
+                Contenido de marca<br />
+                Estrategia digital<br />
+                Dirección creativa
               </p>
 
             </div>
@@ -133,12 +133,12 @@ function RealBlends() {
 
 
 
-      {/* CONTEXT */}
+      {/* CONTEXTO */}
 
       <section className="case-intro">
 
         <div className="case-section-number">
-          01 — CONTEXT
+          01 — CONTEXTO
         </div>
 
 
@@ -182,25 +182,27 @@ function RealBlends() {
 
 
 
-      {/* LARGE MEDIA */}
+      {/* IMAGEN DESTACADA */}
 
       <section className="case-media-full">
 
         <img
           src={realBlendsCover}
           alt="Dirección creativa Real Blends"
+          loading="lazy"
+          decoding="async"
         />
 
       </section>
 
 
 
-      {/* STRATEGY */}
+      {/* ESTRATEGIA */}
 
       <section className="case-strategy">
 
         <div className="case-section-number">
-          02 — STRATEGY
+          02 — ESTRATEGIA
         </div>
 
 
@@ -213,12 +215,12 @@ function RealBlends() {
 
             <span>→</span>
 
-            CONTENT
+            CONTENIDO
             <br />
 
             <span>→</span>
 
-            RESULT
+            RESULTADO
 
           </h2>
 
@@ -229,7 +231,7 @@ function RealBlends() {
 
               <span>01</span>
 
-              <h3>THINK</h3>
+              <h3>PENSAR</h3>
 
               <p>
                 Entender producto, audiencia,
@@ -243,7 +245,7 @@ function RealBlends() {
 
               <span>02</span>
 
-              <h3>CREATE</h3>
+              <h3>CREAR</h3>
 
               <p>
                 Convertir estrategia en conceptos,
@@ -257,7 +259,7 @@ function RealBlends() {
 
               <span>03</span>
 
-              <h3>DISTRIBUTE</h3>
+              <h3>DISTRIBUIR</h3>
 
               <p>
                 Integrar contenido orgánico,
@@ -271,7 +273,7 @@ function RealBlends() {
 
               <span>04</span>
 
-              <h3>OPTIMIZE</h3>
+              <h3>OPTIMIZAR</h3>
 
               <p>
                 Analizar qué funciona y convertir
@@ -288,12 +290,12 @@ function RealBlends() {
 
 
 
-      {/* SELECTED CONTENT */}
+      {/* CONTENIDO */}
 
       <section className="case-work">
 
         <div className="case-section-number">
-          03 — SELECTED CONTENT
+          03 — CONTENIDO SELECCIONADO
         </div>
 
 
@@ -301,10 +303,10 @@ function RealBlends() {
 
           <h2>
 
-            CONTENT
+            CONTENIDO
 
             <span>
-              IN MOTION.
+              EN MOVIMIENTO.
             </span>
 
           </h2>
@@ -325,7 +327,7 @@ function RealBlends() {
 
           <InteractiveVideo
             src={campaign01}
-            label="CAMPAIGN / VIDEO"
+            label="CAMPAÑA / VIDEO"
             number="01"
             className="media-wide"
           />
@@ -333,7 +335,7 @@ function RealBlends() {
 
           <InteractiveVideo
             src={reel01}
-            label="REEL / SOCIAL CONTENT"
+            label="REEL / CONTENIDO SOCIAL"
             number="02"
             className="media-vertical"
           />
@@ -341,7 +343,7 @@ function RealBlends() {
 
           <InteractiveVideo
             src={reel02}
-            label="REEL / SOCIAL CONTENT"
+            label="REEL / CONTENIDO SOCIAL"
             number="03"
             className="media-vertical"
           />
@@ -353,13 +355,15 @@ function RealBlends() {
             <img
               src={design01}
               alt="Diseño publicitario Real Blends"
+              loading="lazy"
+              decoding="async"
             />
 
 
             <div className="media-caption">
 
               <span>
-                DESIGN / CAMPAIGN
+                DISEÑO / CAMPAÑA
               </span>
 
               <span>
@@ -376,14 +380,16 @@ function RealBlends() {
 
             <img
               src={design02}
-              alt="Social Media Real Blends"
+              alt="Contenido para redes Real Blends"
+              loading="lazy"
+              decoding="async"
             />
 
 
             <div className="media-caption">
 
               <span>
-                DESIGN / SOCIAL MEDIA
+                DISEÑO / REDES SOCIALES
               </span>
 
               <span>
@@ -401,56 +407,62 @@ function RealBlends() {
 
 
 
-      {/* CLOSING */}
+      {/* CIERRE */}
 
       <section className="case-closing">
 
-        <p>
-          CREATIVE STRATEGY · SOCIAL MEDIA ·
-          DESIGN · VIDEO
-        </p>
+  <p>
+    ESTRATEGIA CREATIVA · REDES SOCIALES ·
+    DISEÑO · VIDEO
+  </p>
+
+
+  <h2>
+
+    DE LA
+
+    <span>
+      IDEA
+    </span>
+
+    <br />
+
+    AL
+
+    <span>
+      IMPACTO.
+    </span>
+
+  </h2>
+
+</section>
+
+
+
+      {/* SIGUIENTE PROYECTO */}
+
+      <Link
+        to="/project/senor-constructor"
+        className="next-project next-project-clickable"
+      >
+
+        <span>
+          SIGUIENTE PROYECTO
+        </span>
 
 
         <h2>
-
-          FROM
-
-          <span>
-            IDEA
-          </span>
-
-          TO
-
-          <span>
-            IMPACT.
-          </span>
-
+          SEÑOR
+          <br />
+          CONSTRUCTOR
         </h2>
 
-      </section>
 
+        <div>
+          VER PROYECTO →
+        </div>
 
-
-      {/* NEXT PROJECT */}
-
-<Link
-  to="/project/senor-constructor"
-  className="next-project next-project-clickable"
->
-  <span>
-    NEXT PROJECT
-  </span>
-
-  <h2>
-    SEÑOR
-    <br />
-    CONSTRUCTOR
-  </h2>
-
-  <div>
-    VIEW PROJECT →
-  </div>
-</Link>
+      </Link>
 
 
 
@@ -462,7 +474,7 @@ function RealBlends() {
 
 
         <Link to="/">
-          BACK TO HOME ↑
+          VOLVER AL INICIO ↑
         </Link>
 
       </footer>

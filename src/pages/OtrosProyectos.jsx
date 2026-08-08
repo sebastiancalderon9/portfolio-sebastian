@@ -34,9 +34,7 @@ function OtrosProyectos() {
     <main className="op-case">
 
 
-      {/* ===================================
-          NAV
-      =================================== */}
+      {/* NAVEGACIÓN */}
 
       <nav className="op-nav">
 
@@ -52,16 +50,14 @@ function OtrosProyectos() {
           to="/"
           className="op-back"
         >
-          ← BACK TO WORK
+          ← VOLVER AL INICIO
         </Link>
 
       </nav>
 
 
 
-      {/* ===================================
-          HERO
-      =================================== */}
+      {/* HERO */}
 
       <section className="op-hero">
 
@@ -80,7 +76,7 @@ function OtrosProyectos() {
         <div className="op-hero-content">
 
           <p>
-            04 / CREATIVE ARCHIVE
+            04 / ARCHIVO CREATIVO
           </p>
 
 
@@ -98,15 +94,15 @@ function OtrosProyectos() {
           <div className="op-hero-bottom">
 
             <span>
-              DIFFERENT INDUSTRIES
+              DIFERENTES INDUSTRIAS
             </span>
 
             <span>
-              DIFFERENT CHALLENGES
+              DIFERENTES RETOS
             </span>
 
             <strong>
-              SAME CREATIVE MINDSET.
+              MISMA MENTALIDAD CREATIVA.
             </strong>
 
           </div>
@@ -117,14 +113,12 @@ function OtrosProyectos() {
 
 
 
-      {/* ===================================
-          INTRO
-      =================================== */}
+      {/* INTRO */}
 
       <section className="op-intro">
 
         <div className="op-section-label">
-          01 — CREATIVE RANGE
+          01 — VERSATILIDAD CREATIVA
         </div>
 
 
@@ -132,13 +126,13 @@ function OtrosProyectos() {
 
           <h2>
 
-            DIFFERENT
+            MARCAS
 
             <span>
-              BRANDS.
+              DISTINTAS.
             </span>
 
-            NEW IDEAS.
+            NUEVAS IDEAS.
 
           </h2>
 
@@ -167,14 +161,12 @@ function OtrosProyectos() {
 
 
 
-      {/* ===================================
-          ARCHIVE
-      =================================== */}
+      {/* ARCHIVO */}
 
       <section className="op-archive">
 
         <div className="op-section-label">
-          02 — SELECTED PROJECTS
+          02 — PROYECTOS SELECCIONADOS
         </div>
 
 
@@ -182,17 +174,17 @@ function OtrosProyectos() {
 
           <h2>
 
-            CREATIVE
+            ARCHIVO
 
             <span>
-              ARCHIVE.
+              CREATIVO.
             </span>
 
           </h2>
 
 
           <p>
-            Social content, campañas,
+            Contenido social, campañas,
             diseño y video en formato vertical.
           </p>
 
@@ -209,7 +201,7 @@ function OtrosProyectos() {
 
             <InteractiveVideo
               src={multipapas01}
-              label="B2B / SOCIAL CONTENT"
+              label="B2B / CONTENIDO SOCIAL"
               number="01"
               className="op-media"
             />
@@ -222,7 +214,7 @@ function OtrosProyectos() {
               </h3>
 
               <span>
-                FOOD · B2B · CONTENT
+                ALIMENTOS · B2B · CONTENIDO
               </span>
 
             </div>
@@ -237,7 +229,7 @@ function OtrosProyectos() {
 
             <InteractiveVideo
               src={multipapas02}
-              label="VIDEO / CAMPAIGN"
+              label="VIDEO / CAMPAÑA"
               number="02"
               className="op-media"
             />
@@ -250,7 +242,7 @@ function OtrosProyectos() {
               </h3>
 
               <span>
-                CAMPAIGN · VIDEO
+                CAMPAÑA · VIDEO
               </span>
 
             </div>
@@ -265,7 +257,7 @@ function OtrosProyectos() {
 
             <InteractiveVideo
               src={educacion02}
-              label="EDUCATION / CONTENT"
+              label="EDUCACIÓN / CONTENIDO"
               number="03"
               className="op-media"
             />
@@ -278,7 +270,7 @@ function OtrosProyectos() {
               </h3>
 
               <span>
-                SOCIAL · CAMPAIGN
+                REDES · CAMPAÑA
               </span>
 
             </div>
@@ -293,7 +285,7 @@ function OtrosProyectos() {
 
             <InteractiveVideo
               src={gimnasio01}
-              label="FITNESS / CONTENT"
+              label="FITNESS / CONTENIDO"
               number="04"
               className="op-media"
             />
@@ -306,7 +298,7 @@ function OtrosProyectos() {
               </h3>
 
               <span>
-                VIDEO · SOCIAL MEDIA
+                VIDEO · REDES SOCIALES
               </span>
 
             </div>
@@ -324,6 +316,8 @@ function OtrosProyectos() {
               <img
                 src={optica01}
                 alt="Diseño publicitario para óptica"
+                loading="lazy"
+                decoding="async"
               />
 
 
@@ -333,7 +327,7 @@ function OtrosProyectos() {
               <div className="media-caption">
 
                 <span>
-                  HEALTH / DESIGN
+                  SALUD / DISEÑO
                 </span>
 
                 <span>
@@ -352,38 +346,41 @@ function OtrosProyectos() {
               </h3>
 
               <span>
-                DESIGN · CAMPAIGN
+                DISEÑO · CAMPAÑA
               </span>
 
             </div>
 
           </article>
 
-{/* EXTRA PROJECT */}
-
-<article className="op-project">
-
-  <InteractiveVideo
-    src={extra01}
-    label="SOCIAL MEDIA / VIDEO"
-    number="06"
-    className="op-media"
-  />
 
 
-  <div className="op-project-info">
+          {/* LUCIDBOT */}
 
-    <h3>
-      LUCIDBOT
-    </h3>
+          <article className="op-project">
 
-    <span>
-      CONTENT · VIDEO · SOCIAL MEDIA
-    </span>
+            <InteractiveVideo
+              src={extra01}
+              label="REDES SOCIALES / VIDEO"
+              number="06"
+              className="op-media"
+            />
 
-  </div>
 
-</article>
+            <div className="op-project-info">
+
+              <h3>
+                LUCIDBOT
+              </h3>
+
+              <span>
+                CONTENIDO · VIDEO · REDES SOCIALES
+              </span>
+
+            </div>
+
+          </article>
+
 
         </div>
 
@@ -391,28 +388,26 @@ function OtrosProyectos() {
 
 
 
-      {/* ===================================
-          STATEMENT
-      =================================== */}
+      {/* STATEMENT */}
 
       <section className="op-statement">
 
         <div className="op-statement-top">
 
           <span>
-            STRATEGY
+            ESTRATEGIA
           </span>
 
           <span>
-            DESIGN
+            DISEÑO
           </span>
 
           <span>
-            CONTENT
+            CONTENIDO
           </span>
 
           <span>
-            AI
+            IA
           </span>
 
         </div>
@@ -420,16 +415,16 @@ function OtrosProyectos() {
 
         <h2>
 
-          DIFFERENT
+          DIFERENTES
 
           <span>
-            CHALLENGES.
+            RETOS.
           </span>
 
-          SAME GOAL:
+          MISMO OBJETIVO:
 
           <strong>
-            MAKE PEOPLE LOOK.
+            CAPTAR MIRADAS.
           </strong>
 
         </h2>
@@ -438,9 +433,7 @@ function OtrosProyectos() {
 
 
 
-      {/* ===================================
-          FINAL / HOME
-      =================================== */}
+      {/* VOLVER */}
 
       <Link
         to="/"
@@ -448,32 +441,28 @@ function OtrosProyectos() {
       >
 
         <span>
-          END OF SELECTED WORK
+          FIN DE PROYECTOS SELECCIONADOS
         </span>
 
 
         <h2>
 
-          BACK TO
+          VOLVER AL
 
           <span>
-            HOME.
+            INICIO.
           </span>
 
         </h2>
 
 
         <div>
-          START AGAIN ↑
+          EMPEZAR DE NUEVO ↑
         </div>
 
       </Link>
 
 
-
-      {/* ===================================
-          FOOTER
-      =================================== */}
 
       <footer className="op-footer">
 

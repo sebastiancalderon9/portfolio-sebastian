@@ -13,14 +13,8 @@ import {
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-
-/* COMPONENTS */
-
 import ProjectCard
   from './components/ProjectCard'
-
-
-/* PAGES */
 
 import RealBlends
   from './pages/RealBlends'
@@ -34,14 +28,8 @@ import Gintracom
 import OtrosProyectos
   from './pages/OtrosProyectos'
 
-
-/* PROFILE */
-
 import sebastianPhoto
   from './assets/profile/sebastian.png'
-
-
-/* PROJECT COVERS */
 
 import realBlendsCover
   from './assets/projects/realblends-cover.png'
@@ -95,17 +83,10 @@ function Home() {
 
     const ctx = gsap.context(() => {
 
-
-      /* ===================================
-         HERO INTRO
-      =================================== */
-
       const intro = gsap.timeline({
-
         defaults: {
           ease: 'power3.out'
         }
-
       })
 
 
@@ -206,11 +187,6 @@ function Home() {
         )
 
 
-
-      /* ===================================
-         HERO GLOWS
-      =================================== */
-
       gsap.to(
         '.glow-one',
         {
@@ -238,11 +214,6 @@ function Home() {
       )
 
 
-
-      /* ===================================
-         PROJECT CARDS
-      =================================== */
-
       gsap.utils
         .toArray('.project-card')
         .forEach((card) => {
@@ -265,11 +236,6 @@ function Home() {
 
         })
 
-
-
-      /* ===================================
-         GENERAL REVEALS
-      =================================== */
 
       gsap.utils
         .toArray('.reveal')
@@ -311,7 +277,7 @@ function Home() {
 
 
       {/* =====================================================
-          NAV
+          NAVEGACIÓN
       ===================================================== */}
 
       <nav className="navbar">
@@ -327,15 +293,15 @@ function Home() {
         <div className="nav-links">
 
           <a href="#work">
-            WORK
+            PROYECTOS
           </a>
 
           <a href="#about">
-            ABOUT
+            SOBRE MÍ
           </a>
 
           <a href="#contact">
-            CONTACT
+            CONTACTO
           </a>
 
         </div>
@@ -354,7 +320,6 @@ function Home() {
       >
 
         <div className="hero-glow glow-one"></div>
-
         <div className="hero-glow glow-two"></div>
 
 
@@ -365,11 +330,10 @@ function Home() {
           </span>
 
           <span>
-            AVAILABLE FOR NEW PROJECTS
+            DISPONIBLE PARA NUEVOS PROYECTOS
           </span>
 
         </div>
-
 
 
         <div className="hero-content">
@@ -377,12 +341,12 @@ function Home() {
           <div className="hero-main">
 
 
-            {/* HERO COPY */}
+            {/* TEXTO */}
 
             <div className="hero-copy">
 
               <p className="eyebrow">
-                SOCIAL MEDIA MANAGER · CREATIVE STRATEGIST
+                REDES SOCIALES · ESTRATEGIA CREATIVA
               </p>
 
 
@@ -397,7 +361,6 @@ function Home() {
                 </span>
 
               </h1>
-
 
 
               <div className="hero-bottom">
@@ -415,15 +378,15 @@ function Home() {
                 <div className="hero-statement">
 
                   <span>
-                    I CREATE.
+                    CREO.
                   </span>
 
                   <span>
-                    I STRATEGIZE.
+                    PIENSO.
                   </span>
 
                   <strong>
-                    I MAKE IT WORK.
+                    LO HAGO FUNCIONAR.
                   </strong>
 
                 </div>
@@ -434,7 +397,7 @@ function Home() {
 
 
 
-            {/* HERO PORTRAIT */}
+            {/* FOTO */}
 
             <div className="hero-portrait-wrapper">
 
@@ -462,6 +425,24 @@ function Home() {
 
               </div>
 
+
+              {/* CONTACTO DEBAJO DE LA FOTO */}
+
+              <a
+                href="#contact"
+                className="hero-contact-button"
+              >
+
+                <span>
+                  CONTACTARME
+                </span>
+
+                <strong>
+                  ↓
+                </strong>
+
+              </a>
+
             </div>
 
 
@@ -469,13 +450,12 @@ function Home() {
 
         </div>
 
-
       </main>
 
 
 
       {/* =====================================================
-          SELECTED WORK
+          PROYECTOS SELECCIONADOS
       ===================================================== */}
 
       <section
@@ -484,7 +464,7 @@ function Home() {
       >
 
         <div className="work-number">
-          01 / SELECTED WORK
+          01 / PROYECTOS SELECCIONADOS
         </div>
 
 
@@ -502,10 +482,8 @@ function Home() {
 
 
           <p>
-
             Estrategia, contenido, diseño y performance
             aplicados a proyectos y marcas reales.
-
           </p>
 
         </div>
@@ -515,8 +493,6 @@ function Home() {
         <div className="projects-grid">
 
 
-          {/* REAL BLENDS */}
-
           <ProjectCard
 
             number="01"
@@ -524,9 +500,9 @@ function Home() {
             brand="REAL BLENDS"
 
             services="
-              SOCIAL MEDIA ·
-              CREATIVE STRATEGY ·
-              CONTENT ·
+              REDES SOCIALES ·
+              ESTRATEGIA CREATIVA ·
+              CONTENIDO ·
               E-COMMERCE
             "
 
@@ -540,8 +516,6 @@ function Home() {
 
 
 
-          {/* SEÑOR CONSTRUCTOR */}
-
           <ProjectCard
 
             number="02"
@@ -549,7 +523,7 @@ function Home() {
             brand="SEÑOR CONSTRUCTOR"
 
             services="
-              PERFORMANCE CREATIVE ·
+              CREATIVIDAD DE PERFORMANCE ·
               META ADS ·
               E-COMMERCE
             "
@@ -564,8 +538,6 @@ function Home() {
 
 
 
-          {/* GINTRACOM */}
-
           <ProjectCard
 
             number="03"
@@ -573,9 +545,9 @@ function Home() {
             brand="GINTRACOM"
 
             services="
-              SOCIAL MEDIA ·
-              CONTENT ·
-              DESIGN
+              REDES SOCIALES ·
+              CONTENIDO ·
+              DISEÑO
             "
 
             color="#151515"
@@ -588,8 +560,6 @@ function Home() {
 
 
 
-          {/* OTROS PROYECTOS */}
-
           <ProjectCard
 
             number="04"
@@ -597,10 +567,10 @@ function Home() {
             brand="OTROS PROYECTOS"
 
             services="
-              DESIGN ·
-              CAMPAIGNS ·
-              CONTENT ·
-              AI
+              DISEÑO ·
+              CAMPAÑAS ·
+              CONTENIDO ·
+              IA
             "
 
             color="#5637ff"
@@ -627,13 +597,13 @@ function Home() {
         <div className="marquee-track">
 
           <span>
-            STRATEGY · DESIGN · CONTENT ·
-            PERFORMANCE · AI ·
+            ESTRATEGIA · DISEÑO · CONTENIDO ·
+            PERFORMANCE · IA ·
           </span>
 
           <span>
-            STRATEGY · DESIGN · CONTENT ·
-            PERFORMANCE · AI ·
+            ESTRATEGIA · DISEÑO · CONTENIDO ·
+            PERFORMANCE · IA ·
           </span>
 
         </div>
@@ -643,7 +613,7 @@ function Home() {
 
 
       {/* =====================================================
-          ABOUT
+          SOBRE MÍ
       ===================================================== */}
 
       <section
@@ -658,11 +628,10 @@ function Home() {
           </span>
 
           <span>
-            ABOUT ME
+            SOBRE MÍ
           </span>
 
         </div>
-
 
 
         <div className="about-main">
@@ -689,22 +658,18 @@ function Home() {
           <div className="about-copy reveal">
 
             <p>
-
               Soy comunicador social y trabajo
               en la intersección entre creatividad,
               estrategia digital, contenido
               y performance.
-
             </p>
 
 
             <p>
-
               Puedo llevar una idea desde
               el concepto y el guion hasta
               su diseño, producción, pauta,
               análisis y optimización.
-
             </p>
 
           </div>
@@ -718,12 +683,10 @@ function Home() {
 
           <div className="process-item reveal">
 
-            <span>
-              01
-            </span>
+            <span>01</span>
 
             <h3>
-              THINK
+              PENSAR
             </h3>
 
             <p>
@@ -737,12 +700,10 @@ function Home() {
 
           <div className="process-item reveal">
 
-            <span>
-              02
-            </span>
+            <span>02</span>
 
             <h3>
-              CREATE
+              CREAR
             </h3>
 
             <p>
@@ -756,12 +717,10 @@ function Home() {
 
           <div className="process-item reveal">
 
-            <span>
-              03
-            </span>
+            <span>03</span>
 
             <h3>
-              LAUNCH
+              LANZAR
             </h3>
 
             <p>
@@ -775,12 +734,10 @@ function Home() {
 
           <div className="process-item reveal">
 
-            <span>
-              04
-            </span>
+            <span>04</span>
 
             <h3>
-              OPTIMIZE
+              OPTIMIZAR
             </h3>
 
             <p>
@@ -798,7 +755,7 @@ function Home() {
 
 
       {/* =====================================================
-          CAPABILITIES
+          COMPETENCIAS
       ===================================================== */}
 
       <section className="capabilities-section">
@@ -810,7 +767,7 @@ function Home() {
           </span>
 
           <span>
-            CAPABILITIES
+            COMPETENCIAS
           </span>
 
         </div>
@@ -822,7 +779,7 @@ function Home() {
           {[
             {
               title:
-                'SOCIAL MEDIA STRATEGY',
+                'ESTRATEGIA DE REDES SOCIALES',
 
               description:
                 'Estrategia de contenido, construcción de calendarios, definición de formatos, audiencias y oportunidades para hacer crecer la presencia digital de una marca.'
@@ -830,7 +787,7 @@ function Home() {
 
             {
               title:
-                'CREATIVE DIRECTION',
+                'DIRECCIÓN CREATIVA',
 
               description:
                 'Conceptualización de campañas, dirección visual, ideas creativas y construcción de sistemas de contenido alineados con los objetivos de cada proyecto.'
@@ -838,7 +795,7 @@ function Home() {
 
             {
               title:
-                'DESIGN & CONTENT',
+                'DISEÑO Y CONTENIDO',
 
               description:
                 'Diseño de piezas publicitarias, contenido para redes sociales, campañas visuales, copy y adaptación de conceptos a diferentes formatos.'
@@ -846,7 +803,7 @@ function Home() {
 
             {
               title:
-                'VIDEO & UGC',
+                'VIDEO Y UGC',
 
               description:
                 'Concepto, guion, grabación, edición y creación de contenido audiovisual pensado para redes sociales y comunicación digital.'
@@ -854,7 +811,7 @@ function Home() {
 
             {
               title:
-                'META ADS & PERFORMANCE',
+                'META ADS Y PERFORMANCE',
 
               description:
                 'Creatividad orientada a pauta, análisis de resultados, pruebas de conceptos y optimización basada en comportamiento y performance.'
@@ -862,7 +819,7 @@ function Home() {
 
             {
               title:
-                'AI & DIGITAL EXPERIENCES',
+                'IA Y EXPERIENCIAS DIGITALES',
 
               description:
                 'Integración de inteligencia artificial en procesos creativos, diseño, producción audiovisual, contenido y nuevas experiencias digitales.'
@@ -909,7 +866,7 @@ function Home() {
 
 
       {/* =====================================================
-          CONTACT
+          CONTACTO
       ===================================================== */}
 
       <section
@@ -920,7 +877,6 @@ function Home() {
         <div className="contact-glow"></div>
 
 
-
         <div className="section-label contact-label reveal">
 
           <span>
@@ -928,7 +884,7 @@ function Home() {
           </span>
 
           <span>
-            LET&apos;S TALK
+            CONTACTO
           </span>
 
         </div>
@@ -938,40 +894,23 @@ function Home() {
         <div className="contact-content">
 
           <p className="contact-small reveal">
-
             ¿TIENES UNA IDEA, MARCA O PROYECTO?
-
           </p>
 
 
           <h2 className="contact-title reveal">
 
-            LET&apos;S CREATE
+            HAGAMOS
 
             <span>
-              SOMETHING GREAT.
+              ALGO INCREÍBLE.
             </span>
 
           </h2>
 
 
 
-          <a
-            href="mailto:09sacm@gmail.com"
-            className="contact-button reveal"
-          >
-
-            HABLEMOS
-
-            <span>
-              ↗
-            </span>
-
-          </a>
-
-
-
-          {/* DIRECT CONTACT */}
+          {/* CONTACTO DIRECTO */}
 
           <div className="contact-actions reveal">
 
@@ -1024,8 +963,6 @@ function Home() {
         </div>
 
 
-
-        {/* FOOTER */}
 
         <footer className="footer">
 
@@ -1080,50 +1017,30 @@ function App() {
 
       <Routes>
 
-
-        {/* HOME */}
-
         <Route
           path="/"
           element={<Home />}
         />
-
-
-
-        {/* REAL BLENDS */}
 
         <Route
           path="/project/real-blends"
           element={<RealBlends />}
         />
 
-
-
-        {/* SEÑOR CONSTRUCTOR */}
-
         <Route
           path="/project/senor-constructor"
           element={<SenorConstructor />}
         />
-
-
-
-        {/* GINTRACOM */}
 
         <Route
           path="/project/gintracom"
           element={<Gintracom />}
         />
 
-
-
-        {/* OTROS PROYECTOS */}
-
         <Route
           path="/project/otros-proyectos"
           element={<OtrosProyectos />}
         />
-
 
       </Routes>
 

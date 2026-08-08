@@ -872,3 +872,28 @@
   }
 
 }
+/* =========================================================
+   SEÑOR CONSTRUCTOR — INTRO MOBILE FINAL
+========================================================= */
+
+@media (max-width: 430px) {
+
+  .sc-intro h2 {
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 10.8vw !important;
+
+    line-height: 0.88;
+
+    letter-spacing: -0.065em;
+  }
+
+
+  .sc-intro h2 span {
+    width: 100%;
+
+    display: block;
+  }
+
+}

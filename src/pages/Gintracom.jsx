@@ -31,10 +31,6 @@ function Gintracom() {
     <main className="case-study gt-case">
 
 
-      {/* ===================================
-          NAV
-      =================================== */}
-
       <nav className="case-nav">
 
         <Link
@@ -49,16 +45,14 @@ function Gintracom() {
           to="/"
           className="case-back"
         >
-          ← BACK TO WORK
+          ← VOLVER AL INICIO
         </Link>
 
       </nav>
 
 
 
-      {/* ===================================
-          HERO
-      =================================== */}
+      {/* HERO */}
 
       <section className="case-hero gt-hero">
 
@@ -77,7 +71,7 @@ function Gintracom() {
         <div className="case-hero-info">
 
           <div className="case-index">
-            03 / CASE STUDY
+            03 / CASO DE ESTUDIO
           </div>
 
 
@@ -98,13 +92,13 @@ function Gintracom() {
             <div>
 
               <span>
-                AREAS
+                ÁREAS
               </span>
 
               <p>
-                Social Media<br />
-                Content Creation<br />
-                Visual Design
+                Redes sociales<br />
+                Creación de contenido<br />
+                Diseño visual
               </p>
 
             </div>
@@ -113,13 +107,13 @@ function Gintracom() {
             <div>
 
               <span>
-                CONTENT
+                CONTENIDO
               </span>
 
               <p>
                 Reels<br />
-                Social Design<br />
-                Digital Communication
+                Diseño social<br />
+                Comunicación digital
               </p>
 
             </div>
@@ -128,13 +122,13 @@ function Gintracom() {
             <div>
 
               <span>
-                COMMUNITY
+                COMUNIDAD
               </span>
 
               <p>
                 Instagram<br />
-                +45K Followers<br />
-                Current Community
+                +45K seguidores<br />
+                Comunidad actual
               </p>
 
             </div>
@@ -148,14 +142,12 @@ function Gintracom() {
 
 
 
-      {/* ===================================
-          CONTEXT
-      =================================== */}
+      {/* PRESENCIA DIGITAL */}
 
       <section className="case-intro gt-intro">
 
         <div className="case-section-number">
-          01 — DIGITAL PRESENCE
+          01 — PRESENCIA DIGITAL
         </div>
 
 
@@ -163,13 +155,13 @@ function Gintracom() {
 
           <h2>
 
-            CONTENT
+            CONTENIDO
 
             <span>
-              BUILDS
+              CREA
             </span>
 
-            COMMUNITY.
+            COMUNIDAD.
 
           </h2>
 
@@ -200,14 +192,12 @@ function Gintracom() {
 
 
 
-      {/* ===================================
-          COMMUNITY
-      =================================== */}
+      {/* COMUNIDAD */}
 
       <section className="gt-community">
 
         <div className="case-section-number">
-          02 — COMMUNITY
+          02 — COMUNIDAD
         </div>
 
 
@@ -217,7 +207,7 @@ function Gintracom() {
           <div className="gt-community-stat">
 
             <span>
-              CURRENT INSTAGRAM COMMUNITY
+              COMUNIDAD ACTUAL EN INSTAGRAM
             </span>
 
 
@@ -227,7 +217,7 @@ function Gintracom() {
 
 
             <strong>
-              FOLLOWERS
+              SEGUIDORES
             </strong>
 
           </div>
@@ -245,7 +235,7 @@ function Gintracom() {
 
 
             <span>
-              SOCIAL MEDIA × CONTENT × COMMUNITY
+              REDES SOCIALES × CONTENIDO × COMUNIDAD
             </span>
 
           </div>
@@ -260,6 +250,8 @@ function Gintracom() {
           <img
             src={result01}
             alt="Perfil de Instagram de Gintracom"
+            loading="lazy"
+            decoding="async"
           />
 
         </div>
@@ -268,14 +260,12 @@ function Gintracom() {
 
 
 
-      {/* ===================================
-          CONTENT SYSTEM
-      =================================== */}
+      {/* SISTEMA */}
 
       <section className="gt-system">
 
         <div className="case-section-number">
-          03 — CONTENT SYSTEM
+          03 — SISTEMA DE CONTENIDO
         </div>
 
 
@@ -285,25 +275,21 @@ function Gintracom() {
           <div className="gt-system-title">
 
             <span>
-              DIGITAL COMMUNICATION
+              COMUNICACIÓN DIGITAL
             </span>
 
 
             <h2>
 
-              INFORM
+              INFORMAR
 
-              <span>
-                +
-              </span>
+              <span>+</span>
 
-              CONNECT
+              CONECTAR
 
-              <span>
-                +
-              </span>
+              <span>+</span>
 
-              CREATE
+              CREAR
 
             </h2>
 
@@ -316,15 +302,12 @@ function Gintracom() {
 
             <div>
 
-              <span>
-                01
-              </span>
-
+              <span>01</span>
 
               <div>
 
                 <h3>
-                  INFORM
+                  INFORMAR
                 </h3>
 
                 <p>
@@ -340,15 +323,12 @@ function Gintracom() {
 
             <div>
 
-              <span>
-                02
-              </span>
-
+              <span>02</span>
 
               <div>
 
                 <h3>
-                  CONNECT
+                  CONECTAR
                 </h3>
 
                 <p>
@@ -365,15 +345,12 @@ function Gintracom() {
 
             <div>
 
-              <span>
-                03
-              </span>
-
+              <span>03</span>
 
               <div>
 
                 <h3>
-                  CREATE
+                  CREAR
                 </h3>
 
                 <p>
@@ -395,14 +372,12 @@ function Gintracom() {
 
 
 
-      {/* ===================================
-          SELECTED CONTENT
-      =================================== */}
+      {/* CONTENIDO */}
 
       <section className="case-work gt-work">
 
         <div className="case-section-number">
-          04 — SELECTED CONTENT
+          04 — CONTENIDO SELECCIONADO
         </div>
 
 
@@ -410,10 +385,10 @@ function Gintracom() {
 
           <h2>
 
-            SOCIAL
+            CONTENIDO
 
             <span>
-              IN MOTION.
+              EN MOVIMIENTO.
             </span>
 
           </h2>
@@ -432,42 +407,37 @@ function Gintracom() {
         <div className="portfolio-media-grid">
 
 
-          {/* REEL 01 */}
-
           <InteractiveVideo
             src={reel01}
-            label="SOCIAL MEDIA / REEL"
+            label="REDES SOCIALES / REEL"
             number="01"
             className="media-vertical"
           />
 
 
-
-          {/* REEL 02 */}
-
           <InteractiveVideo
             src={reel02}
-            label="CONTENT / REEL"
+            label="CONTENIDO / REEL"
             number="02"
             className="media-vertical"
           />
 
 
 
-          {/* DESIGN 01 */}
-
           <div className="media-item media-square gt-media-item">
 
             <img
               src={design01}
               alt="Diseño de contenido Gintracom"
+              loading="lazy"
+              decoding="async"
             />
 
 
             <div className="media-caption">
 
               <span>
-                SOCIAL DESIGN
+                DISEÑO SOCIAL
               </span>
 
               <span>
@@ -480,20 +450,20 @@ function Gintracom() {
 
 
 
-          {/* DESIGN 02 */}
-
           <div className="media-item media-square gt-media-item">
 
             <img
               src={design02}
               alt="Contenido para redes Gintracom"
+              loading="lazy"
+              decoding="async"
             />
 
 
             <div className="media-caption">
 
               <span>
-                DIGITAL CONTENT
+                CONTENIDO DIGITAL
               </span>
 
               <span>
@@ -511,9 +481,7 @@ function Gintracom() {
 
 
 
-      {/* ===================================
-          CLOSING
-      =================================== */}
+      {/* CIERRE */}
 
       <section className="gt-closing">
 
@@ -521,15 +489,15 @@ function Gintracom() {
         <div className="gt-closing-labels">
 
           <span>
-            SOCIAL MEDIA
+            REDES SOCIALES
           </span>
 
           <span>
-            CONTENT
+            CONTENIDO
           </span>
 
           <span>
-            DESIGN
+            DISEÑO
           </span>
 
         </div>
@@ -537,14 +505,14 @@ function Gintracom() {
 
         <h2>
 
-          BE SEEN.
+          HAZTE VER.
 
           <span>
-            BE RELEVANT.
+            SÉ RELEVANTE.
           </span>
 
           <strong>
-            STAY CONNECTED.
+            SIGUE CONECTADO.
           </strong>
 
         </h2>
@@ -553,37 +521,32 @@ function Gintracom() {
 
 
 
-      {/* ===================================
-          NEXT PROJECT
-      =================================== */}
+      {/* SIGUIENTE */}
 
       <Link
-  to="/project/otros-proyectos"
-  className="next-project gt-next next-project-clickable"
->
+        to="/project/otros-proyectos"
+        className="next-project gt-next next-project-clickable"
+      >
 
-  <span>
-    NEXT PROJECT
-  </span>
-
-
-  <h2>
-    OTROS
-    <br />
-    PROYECTOS
-  </h2>
+        <span>
+          SIGUIENTE PROYECTO
+        </span>
 
 
-  <div>
-    VIEW PROJECT →
-  </div>
+        <h2>
+          OTROS
+          <br />
+          PROYECTOS
+        </h2>
 
-</Link>
+
+        <div>
+          VER PROYECTO →
+        </div>
+
+      </Link>
 
 
-      {/* ===================================
-          FOOTER
-      =================================== */}
 
       <footer className="case-footer">
 
@@ -593,7 +556,7 @@ function Gintracom() {
 
 
         <Link to="/">
-          BACK TO HOME ↑
+          VOLVER AL INICIO ↑
         </Link>
 
       </footer>
