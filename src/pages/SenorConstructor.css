@@ -752,3 +752,51 @@
   }
 
 }
+/* =========================================================
+   SEÑOR CONSTRUCTOR — MOBILE FINAL FIX
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .sc-title {
+    width: 100%;
+    max-width: 100%;
+
+    font-size: clamp(54px, 14vw, 86px);
+
+    line-height: 0.82;
+
+    letter-spacing: -0.075em;
+  }
+
+
+  /* SEÑOR mantiene protagonismo */
+
+  .sc-title > span {
+    display: block;
+
+    width: 100%;
+
+    font-size: 0.69em;
+
+    line-height: 0.9;
+
+    letter-spacing: -0.07em;
+
+    white-space: nowrap;
+  }
+
+}
+
+
+@media (max-width: 390px) {
+
+  .sc-title {
+    font-size: 13.5vw;
+  }
+
+  .sc-title > span {
+    font-size: 0.68em;
+  }
+
+}

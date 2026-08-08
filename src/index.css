@@ -2310,3 +2310,203 @@ body {
   }
 
 }
+/* =========================================================
+   MOBILE MODERN UI
+========================================================= */
+
+@media (max-width: 768px) {
+
+
+  /* =======================================
+     PROJECT CARDS HOME
+  ======================================= */
+
+  .project-card,
+  .project-card:first-child,
+  .project-card:last-child {
+
+    border-radius: 28px;
+
+    overflow: hidden;
+  }
+
+
+  /* =======================================
+     HERO DE CASE STUDIES
+  ======================================= */
+
+  .case-hero,
+  .op-hero {
+
+    border-radius:
+      0 0 30px 30px;
+
+    overflow: hidden;
+  }
+
+
+  /* =======================================
+     SECCIONES TIPO CARD
+  ======================================= */
+
+  .case-intro,
+  .case-strategy,
+  .case-work,
+
+  .sc-performance,
+  .sc-strategy,
+  .sc-closing,
+
+  .gt-community,
+  .gt-system,
+  .gt-work,
+  .gt-closing,
+
+  .op-intro,
+  .op-archive,
+  .op-statement,
+
+  .capabilities-section,
+  .contact-section {
+
+    margin:
+      12px 10px;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+  }
+
+
+  /* =======================================
+     NEXT PROJECT
+  ======================================= */
+
+  .next-project,
+  .op-final {
+
+    margin:
+      12px 10px;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+  }
+
+
+  /* =======================================
+     IMÁGENES GRANDES
+  ======================================= */
+
+  .case-media-full {
+
+    width: auto;
+
+    margin:
+      12px 10px;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+  }
+
+
+  .sc-result-image,
+  .gt-result-image {
+
+    border-radius: 24px;
+
+    overflow: hidden;
+  }
+
+
+  /* =======================================
+     VIDEOS / MEDIA
+  ======================================= */
+
+  .media-item,
+  .interactive-video,
+  .op-media,
+  .media-placeholder {
+
+    border-radius: 24px;
+
+    overflow: hidden;
+  }
+
+
+  /* =======================================
+     IMÁGENES CUADRADAS
+  ======================================= */
+
+  .sc-media-item,
+  .gt-media-item,
+  .op-image {
+
+    border-radius: 24px;
+
+    overflow: hidden;
+  }
+
+
+  /* =======================================
+     PROCESS CARDS
+  ======================================= */
+
+  .process-item {
+
+    margin-bottom: 10px;
+
+    border:
+      1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 22px;
+  }
+
+
+  /* =======================================
+     CAPABILITIES
+  ======================================= */
+
+  .capability-item {
+
+    border-radius: 18px;
+
+    overflow: hidden;
+  }
+
+
+  .capability-item[open] {
+
+    background:
+      rgba(0, 0, 0, 0.035);
+  }
+
+
+  /* =======================================
+     CONTACT BUTTON
+  ======================================= */
+
+  .contact-button {
+
+    width: 135px;
+    height: 135px;
+
+    box-shadow:
+      0 20px 50px
+      rgba(121, 92, 255, 0.25);
+  }
+
+
+  /* =======================================
+     CONTACT LINKS
+  ======================================= */
+
+  .contact-direct-link {
+
+    border-radius: 18px;
+
+    margin-bottom: 8px;
+  }
+
+}
