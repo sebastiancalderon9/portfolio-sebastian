@@ -2510,3 +2510,43 @@ body {
   }
 
 }
+/* =========================================================
+   HOME CARD TITLE FIX — MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .project-card-bottom {
+    align-items: flex-end;
+    gap: 12px;
+  }
+
+  .project-card h3 {
+    max-width: 100%;
+    width: 100%;
+
+    font-size: clamp(34px, 9.5vw, 52px);
+    line-height: 0.9;
+    letter-spacing: -0.06em;
+
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .project-arrow {
+    flex-shrink: 0;
+    font-size: 28px;
+    line-height: 1;
+  }
+
+}
+
+
+@media (max-width: 390px) {
+
+  .project-card h3 {
+    font-size: 9vw;
+    line-height: 0.92;
+  }
+
+}
