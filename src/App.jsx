@@ -4,8 +4,6 @@ import {
   useRef
 } from 'react'
 
-import sebastianPhoto from "./assets/profile/sebastian.png";
-
 import {
   Routes,
   Route,
@@ -13,15 +11,16 @@ import {
 } from 'react-router-dom'
 
 import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import {
-  ScrollTrigger
-} from 'gsap/ScrollTrigger'
 
+/* COMPONENTS */
 
 import ProjectCard
   from './components/ProjectCard'
 
+
+/* PAGES */
 
 import RealBlends
   from './pages/RealBlends'
@@ -35,6 +34,14 @@ import Gintracom
 import OtrosProyectos
   from './pages/OtrosProyectos'
 
+
+/* PROFILE */
+
+import sebastianPhoto
+  from './assets/profile/sebastian.png'
+
+
+/* PROJECT COVERS */
 
 import realBlendsCover
   from './assets/projects/realblends-cover.png'
@@ -64,11 +71,7 @@ function ScrollToTop() {
 
   useEffect(() => {
 
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'instant'
-    })
+    window.scrollTo(0, 0)
 
   }, [pathname])
 
@@ -152,9 +155,9 @@ function Home() {
         .from(
           '.hero h1 span:first-child',
           {
-            y: 120,
+            y: 100,
             opacity: 0,
-            duration: 1.1
+            duration: 1
           },
           '-=0.2'
         )
@@ -162,12 +165,12 @@ function Home() {
         .from(
           '.outline-text',
           {
-            y: 120,
+            y: 100,
             opacity: 0,
-            duration: 1,
+            duration: 0.95,
             ease: 'power4.out'
           },
-          '-=0.85'
+          '-=0.75'
         )
 
         .from(
@@ -175,9 +178,9 @@ function Home() {
           {
             y: 30,
             opacity: 0,
-            duration: 0.7
+            duration: 0.65
           },
-          '-=0.45'
+          '-=0.4'
         )
 
         .from(
@@ -185,10 +188,21 @@ function Home() {
           {
             y: 20,
             opacity: 0,
-            duration: 0.6,
-            stagger: 0.1
+            duration: 0.55,
+            stagger: 0.08
           },
-          '-=0.45'
+          '-=0.35'
+        )
+
+        .from(
+          '.hero-portrait-card',
+          {
+            x: 60,
+            scale: 0.96,
+            opacity: 0,
+            duration: 0.9
+          },
+          '-=0.7'
         )
 
 
@@ -296,9 +310,9 @@ function Home() {
     >
 
 
-      {/* ===================================
+      {/* =====================================================
           NAV
-      =================================== */}
+      ===================================================== */}
 
       <nav className="navbar">
 
@@ -330,60 +344,139 @@ function Home() {
 
 
 
-      {/* ===================================
+      {/* =====================================================
           HERO
-      =================================== */}
+      ===================================================== */}
 
-      <div className="hero-content">
-  <div className="hero-main">
-    <div className="hero-copy">
-      <div className="eyebrow">
-        GESTOR DE REDES SOCIALES · ESTRATEGA CREATIVO
-      </div>
+      <main
+        className="hero"
+        id="top"
+      >
 
-      <h1>
-        <span>SEBASTIÁN</span>
-        <span className="outline-text">CALDERÓN</span>
-      </h1>
+        <div className="hero-glow glow-one"></div>
 
-      <div className="hero-bottom">
-        <p className="hero-description">
-          Creo ideas, contenido y estrategias digitales que hacen
-          que las marcas llamen la atención, conecten y generen
-          resultados.
-        </p>
+        <div className="hero-glow glow-two"></div>
 
-        <div className="hero-statement">
-          <span>YO CREO.</span>
-          <span>ELABORO ESTRATEGIAS.</span>
-          <strong>YO LO HAGO FUNCIONAR.</strong>
+
+        <div className="hero-topline">
+
+          <span>
+            MEDELLÍN, COLOMBIA
+          </span>
+
+          <span>
+            AVAILABLE FOR NEW PROJECTS
+          </span>
+
         </div>
-      </div>
-    </div>
 
-    <div className="hero-portrait-wrapper">
-      <div className="hero-portrait-card">
-        <img
-          src={sebastianPhoto}
-          alt="Sebastián Calderón"
-          className="hero-portrait"
-          loading="eager"
-        />
 
-        <div className="hero-portrait-badge">
-          <span>MEDELLÍN · COLOMBIA</span>
-          <strong>SOCIAL MEDIA MANAGER</strong>
+
+        <div className="hero-content">
+
+          <div className="hero-main">
+
+
+            {/* HERO COPY */}
+
+            <div className="hero-copy">
+
+              <p className="eyebrow">
+                SOCIAL MEDIA MANAGER · CREATIVE STRATEGIST
+              </p>
+
+
+              <h1>
+
+                <span>
+                  SEBASTIÁN
+                </span>
+
+                <span className="outline-text">
+                  CALDERÓN
+                </span>
+
+              </h1>
+
+
+
+              <div className="hero-bottom">
+
+                <p className="hero-description">
+
+                  Creo ideas, contenido y estrategias
+                  digitales que hacen que las marcas
+                  llamen la atención, conecten y
+                  generen resultados.
+
+                </p>
+
+
+                <div className="hero-statement">
+
+                  <span>
+                    I CREATE.
+                  </span>
+
+                  <span>
+                    I STRATEGIZE.
+                  </span>
+
+                  <strong>
+                    I MAKE IT WORK.
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+            {/* HERO PORTRAIT */}
+
+            <div className="hero-portrait-wrapper">
+
+              <div className="hero-portrait-card">
+
+                <img
+                  src={sebastianPhoto}
+                  alt="Sebastián Calderón"
+                  className="hero-portrait"
+                  loading="eager"
+                />
+
+
+                <div className="hero-portrait-badge">
+
+                  <span>
+                    MEDELLÍN · COLOMBIA
+                  </span>
+
+                  <strong>
+                    COMUNICADOR SOCIAL · PERIODISTA
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+
+      </main>
 
 
 
-      {/* ===================================
+      {/* =====================================================
           SELECTED WORK
-      =================================== */}
+      ===================================================== */}
 
       <section
         id="work"
@@ -525,9 +618,9 @@ function Home() {
 
 
 
-      {/* ===================================
+      {/* =====================================================
           MARQUEE
-      =================================== */}
+      ===================================================== */}
 
       <section className="marquee-section">
 
@@ -549,9 +642,9 @@ function Home() {
 
 
 
-      {/* ===================================
+      {/* =====================================================
           ABOUT
-      =================================== */}
+      ===================================================== */}
 
       <section
         id="about"
@@ -569,6 +662,7 @@ function Home() {
           </span>
 
         </div>
+
 
 
         <div className="about-main">
@@ -703,109 +797,120 @@ function Home() {
 
 
 
-      {/* ===================================
+      {/* =====================================================
           CAPABILITIES
-      =================================== */}
+      ===================================================== */}
 
-     {/* ===================================
-    CAPABILITIES
-=================================== */}
+      <section className="capabilities-section">
 
-<section className="capabilities-section">
-
-  <div className="section-label reveal">
-
-    <span>
-      03
-    </span>
-
-    <span>
-      CAPABILITIES
-    </span>
-
-  </div>
-
-
-  <div className="capabilities-list">
-
-    {[
-      {
-        title: 'SOCIAL MEDIA STRATEGY',
-        description:
-          'Estrategia de contenido, construcción de calendarios, definición de formatos, audiencias y oportunidades para hacer crecer la presencia digital de una marca.'
-      },
-
-      {
-        title: 'CREATIVE DIRECTION',
-        description:
-          'Conceptualización de campañas, dirección visual, ideas creativas y construcción de sistemas de contenido alineados con los objetivos de cada proyecto.'
-      },
-
-      {
-        title: 'DESIGN & CONTENT',
-        description:
-          'Diseño de piezas publicitarias, contenido para redes sociales, campañas visuales, copy y adaptación de conceptos a diferentes formatos.'
-      },
-
-      {
-        title: 'VIDEO & UGC',
-        description:
-          'Concepto, guion, grabación, edición y creación de contenido audiovisual pensado para redes sociales y comunicación digital.'
-      },
-
-      {
-        title: 'META ADS & PERFORMANCE',
-        description:
-          'Creatividad orientada a pauta, análisis de resultados, pruebas de conceptos y optimización basada en comportamiento y performance.'
-      },
-
-      {
-        title: 'AI & DIGITAL EXPERIENCES',
-        description:
-          'Integración de inteligencia artificial en procesos creativos, diseño, producción audiovisual, contenido y nuevas experiencias digitales.'
-      }
-
-    ].map((skill, index) => (
-
-      <details
-        className="capability capability-item reveal"
-        key={skill.title}
-      >
-
-        <summary>
+        <div className="section-label reveal">
 
           <span>
-            0{index + 1}
+            03
           </span>
 
-          <h3>
-            {skill.title}
-          </h3>
-
-          <span className="capability-toggle">
-            +
+          <span>
+            CAPABILITIES
           </span>
 
-        </summary>
-
-
-        <p className="capability-description">
-          {skill.description}
-        </p>
-
-      </details>
-
-    ))}
-
-  </div>
-
-</section>
+        </div>
 
 
 
-      {/* ===================================
+        <div className="capabilities-list">
+
+          {[
+            {
+              title:
+                'SOCIAL MEDIA STRATEGY',
+
+              description:
+                'Estrategia de contenido, construcción de calendarios, definición de formatos, audiencias y oportunidades para hacer crecer la presencia digital de una marca.'
+            },
+
+            {
+              title:
+                'CREATIVE DIRECTION',
+
+              description:
+                'Conceptualización de campañas, dirección visual, ideas creativas y construcción de sistemas de contenido alineados con los objetivos de cada proyecto.'
+            },
+
+            {
+              title:
+                'DESIGN & CONTENT',
+
+              description:
+                'Diseño de piezas publicitarias, contenido para redes sociales, campañas visuales, copy y adaptación de conceptos a diferentes formatos.'
+            },
+
+            {
+              title:
+                'VIDEO & UGC',
+
+              description:
+                'Concepto, guion, grabación, edición y creación de contenido audiovisual pensado para redes sociales y comunicación digital.'
+            },
+
+            {
+              title:
+                'META ADS & PERFORMANCE',
+
+              description:
+                'Creatividad orientada a pauta, análisis de resultados, pruebas de conceptos y optimización basada en comportamiento y performance.'
+            },
+
+            {
+              title:
+                'AI & DIGITAL EXPERIENCES',
+
+              description:
+                'Integración de inteligencia artificial en procesos creativos, diseño, producción audiovisual, contenido y nuevas experiencias digitales.'
+            }
+
+          ].map((skill, index) => (
+
+            <details
+              className="capability capability-item reveal"
+              key={skill.title}
+            >
+
+              <summary>
+
+                <span>
+                  0{index + 1}
+                </span>
+
+
+                <h3>
+                  {skill.title}
+                </h3>
+
+
+                <span className="capability-toggle">
+                  +
+                </span>
+
+              </summary>
+
+
+              <p className="capability-description">
+                {skill.description}
+              </p>
+
+            </details>
+
+          ))}
+
+        </div>
+
+      </section>
+
+
+
+      {/* =====================================================
           CONTACT
-      =================================== */}
+      ===================================================== */}
 
       <section
         id="contact"
@@ -815,6 +920,7 @@ function Home() {
         <div className="contact-glow"></div>
 
 
+
         <div className="section-label contact-label reveal">
 
           <span>
@@ -822,10 +928,11 @@ function Home() {
           </span>
 
           <span>
-            LET'S TALK
+            LET&apos;S TALK
           </span>
 
         </div>
+
 
 
         <div className="contact-content">
@@ -839,13 +946,14 @@ function Home() {
 
           <h2 className="contact-title reveal">
 
-            LET'S CREATE
+            LET&apos;S CREATE
 
             <span>
               SOMETHING GREAT.
             </span>
 
           </h2>
+
 
 
           <a
@@ -861,55 +969,63 @@ function Home() {
 
           </a>
 
+
+
+          {/* DIRECT CONTACT */}
+
+          <div className="contact-actions reveal">
+
+
+            <a
+              href="mailto:09sacm@gmail.com"
+              className="contact-direct-link"
+            >
+
+              <span>
+                EMAIL
+              </span>
+
+              <strong>
+                09sacm@gmail.com
+              </strong>
+
+              <em>
+                ↗
+              </em>
+
+            </a>
+
+
+
+            <a
+              href="https://wa.me/573233004012"
+              target="_blank"
+              rel="noreferrer"
+              className="contact-direct-link"
+            >
+
+              <span>
+                WHATSAPP
+              </span>
+
+              <strong>
+                +57 323 300 4012
+              </strong>
+
+              <em>
+                ↗
+              </em>
+
+            </a>
+
+
+          </div>
+
         </div>
 
-<div className="contact-actions reveal">
 
 
-  <a
-    href="mailto:09sacm@gmail.com"
-    className="contact-direct-link"
-  >
-
-    <span>
-      EMAIL
-    </span>
-
-    <strong>
-      09sacm@gmail.com
-    </strong>
-
-    <em>
-      ↗
-    </em>
-
-  </a>
-
-
-
-  <a
-    href="https://wa.me/573233004012"
-    target="_blank"
-    rel="noreferrer"
-    className="contact-direct-link"
-  >
-
-    <span>
-      WHATSAPP
-    </span>
-
-    <strong>
-      +57 323 300 4012
-    </strong>
-
-    <em>
-      ↗
-    </em>
-
-  </a>
-
-
-</div>
+        {/* FOOTER */}
 
         <footer className="footer">
 
@@ -936,6 +1052,7 @@ function Home() {
           </div>
 
         </footer>
+
 
       </section>
 
