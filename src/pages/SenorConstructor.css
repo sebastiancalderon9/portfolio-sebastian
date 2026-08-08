@@ -1,0 +1,676 @@
+/* =========================================================
+   SEÑOR CONSTRUCTOR
+========================================================= */
+
+.sc-case {
+  --sc-yellow: #ffd400;
+  --sc-black: #080808;
+  --sc-soft-black: #111111;
+  --sc-white: #f4f2eb;
+}
+
+
+/* =========================================================
+   NAV
+========================================================= */
+
+.sc-case .case-logo span {
+  color: var(--sc-yellow);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.sc-hero .case-hero-overlay {
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0.20) 50%,
+      rgba(0, 0, 0, 0.46) 100%
+    );
+}
+
+
+.sc-title {
+  font-size:
+    clamp(70px, 11vw, 180px);
+
+  line-height: 0.76;
+}
+
+
+.sc-title span {
+  -webkit-text-stroke:
+    2px rgba(255, 255, 255, 0.95);
+}
+
+
+.sc-case .case-meta span {
+  color: var(--sc-yellow);
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.sc-intro {
+  background: var(--sc-yellow);
+
+  color: #090909;
+}
+
+
+.sc-intro
+.case-section-number {
+  opacity: 0.5;
+}
+
+
+.sc-intro h2 span {
+  -webkit-text-stroke:
+    2px #090909;
+}
+
+
+.sc-intro
+.case-intro-copy p {
+  color:
+    rgba(0, 0, 0, 0.68);
+}
+
+
+/* =========================================================
+   PERFORMANCE
+========================================================= */
+
+.sc-performance {
+  background: var(--sc-black);
+
+  color: white;
+
+  padding:
+    140px 5vw 0;
+}
+
+
+.sc-performance-heading {
+  padding-bottom: 110px;
+}
+
+
+.sc-performance-title {
+  margin-top: 85px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.4fr 0.6fr;
+
+  gap: 100px;
+
+  align-items: end;
+}
+
+
+.sc-result-label {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: var(--sc-yellow);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+
+.sc-performance-title h2 {
+  font-size:
+    clamp(95px, 14vw, 220px);
+
+  line-height: 0.7;
+
+  letter-spacing: -0.09em;
+
+  font-weight: 900;
+}
+
+
+.sc-performance-title h2 span {
+  color: var(--sc-yellow);
+}
+
+
+.sc-performance-title
+> div:first-child > p {
+
+  margin-top: 28px;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  color:
+    rgba(255, 255, 255, 0.55);
+}
+
+
+.sc-performance-copy {
+  padding-bottom: 8px;
+}
+
+
+.sc-performance-copy p {
+  max-width: 420px;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  color:
+    rgba(255, 255, 255, 0.58);
+}
+
+
+.sc-performance-copy span {
+  display: block;
+
+  margin-top: 35px;
+
+  color: var(--sc-yellow);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.sc-result-image {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #111;
+}
+
+
+.sc-result-image img {
+  width: 100%;
+
+  height: auto;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.9s
+    cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+.sc-result-image:hover img {
+  transform: scale(1.015);
+}
+
+
+/* =========================================================
+   PERFORMANCE SYSTEM
+========================================================= */
+
+.sc-strategy {
+  padding:
+    140px 5vw;
+
+  background:
+    var(--sc-yellow);
+
+  color: #090909;
+}
+
+
+.sc-strategy-content {
+  margin-top: 95px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 120px;
+}
+
+
+.sc-strategy-title > span {
+  display: block;
+
+  margin-bottom: 30px;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+
+  opacity: 0.55;
+}
+
+
+.sc-strategy-title h2 {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  font-size:
+    clamp(58px, 7vw, 110px);
+
+  line-height: 0.82;
+
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+}
+
+
+.sc-strategy-title h2 span {
+  color:
+    rgba(0, 0, 0, 0.25);
+}
+
+
+.sc-system-items {
+  border-top:
+    1px solid rgba(0, 0, 0, 0.35);
+}
+
+
+.sc-system-items > div {
+  padding: 29px 0;
+
+  display: grid;
+
+  grid-template-columns:
+    60px 1fr;
+
+  gap: 20px;
+
+  border-bottom:
+    1px solid rgba(0, 0, 0, 0.28);
+}
+
+
+.sc-system-items
+> div > span {
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  opacity: 0.45;
+}
+
+
+.sc-system-items h3 {
+  margin-bottom: 12px;
+
+  font-size: 22px;
+
+  letter-spacing: -0.04em;
+}
+
+
+.sc-system-items p {
+  max-width: 450px;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+
+  color:
+    rgba(0, 0, 0, 0.62);
+}
+
+
+/* =========================================================
+   WORK
+========================================================= */
+
+.sc-work {
+  background: #0a0a0a;
+}
+
+
+.sc-work
+.case-work-title h2 span {
+
+  -webkit-text-stroke:
+    2px var(--sc-yellow);
+}
+
+
+.sc-media-item {
+  position: relative;
+
+  overflow: hidden;
+
+  background: #111;
+}
+
+
+.sc-media-item img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.8s
+    cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+.sc-media-item:hover img {
+  transform: scale(1.025);
+}
+
+
+/* =========================================================
+   INTERACTIVE VIDEO OVERRIDES
+========================================================= */
+
+.sc-case
+.video-play-circle {
+
+  border-color:
+    rgba(255, 212, 0, 0.75);
+}
+
+
+.sc-case
+.interactive-video:hover
+.video-play-circle {
+
+  background:
+    var(--sc-yellow);
+
+  border-color:
+    var(--sc-yellow);
+}
+
+
+.sc-case
+.interactive-video:hover
+.video-play-icon {
+
+  color: #080808;
+}
+
+
+.sc-case
+.interactive-video:focus-visible {
+
+  outline-color:
+    var(--sc-yellow);
+}
+
+
+/* =========================================================
+   CLOSING
+========================================================= */
+
+.sc-closing {
+  position: relative;
+
+  padding:
+    150px 5vw;
+
+  background:
+    var(--sc-soft-black);
+
+  color: white;
+
+  overflow: hidden;
+}
+
+
+.sc-closing::before {
+  content: '';
+
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  top: -300px;
+  right: -200px;
+
+  border-radius: 50%;
+
+  background:
+    var(--sc-yellow);
+
+  filter:
+    blur(180px);
+
+  opacity: 0.1;
+}
+
+
+.sc-closing-small {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  gap: 30px;
+
+  margin-bottom: 80px;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color:
+    rgba(255, 255, 255, 0.45);
+}
+
+
+.sc-closing h2 {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 1300px;
+
+  font-size:
+    clamp(58px, 8vw, 125px);
+
+  line-height: 0.86;
+
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+}
+
+
+.sc-closing h2 span {
+  display: block;
+
+  color: transparent;
+
+  -webkit-text-stroke:
+    1.5px rgba(255, 255, 255, 0.8);
+}
+
+
+.sc-closing h2 strong {
+  display: block;
+
+  color:
+    var(--sc-yellow);
+
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   NEXT PROJECT
+========================================================= */
+
+.sc-next {
+  background:
+    var(--sc-yellow);
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .sc-title {
+    font-size: 16.5vw;
+
+    line-height: 0.78;
+  }
+
+
+  .sc-title span {
+    -webkit-text-stroke:
+      1px white;
+  }
+
+
+  .sc-intro h2 span {
+    -webkit-text-stroke:
+      1px #090909;
+  }
+
+
+  .sc-performance {
+    padding:
+      90px 6vw 0;
+  }
+
+
+  .sc-performance-heading {
+    padding-bottom: 75px;
+  }
+
+
+  .sc-performance-title {
+    margin-top: 60px;
+
+    grid-template-columns:
+      1fr;
+
+    gap: 55px;
+  }
+
+
+  .sc-performance-title h2 {
+    font-size: 24vw;
+  }
+
+
+  .sc-performance-copy p {
+    font-size: 15px;
+  }
+
+
+  .sc-strategy {
+    padding:
+      90px 6vw;
+  }
+
+
+  .sc-strategy-content {
+    margin-top: 65px;
+
+    grid-template-columns:
+      1fr;
+
+    gap: 70px;
+  }
+
+
+  .sc-strategy-title h2 {
+    font-size: 15vw;
+  }
+
+
+  .sc-closing {
+    padding:
+      100px 6vw;
+  }
+
+
+  .sc-closing-small {
+    margin-bottom: 55px;
+
+    flex-wrap: wrap;
+
+    gap: 12px 22px;
+  }
+
+
+  .sc-closing h2 {
+    font-size: 13vw;
+  }
+
+
+  .sc-work
+  .case-work-title h2 span {
+
+    -webkit-text-stroke:
+      1px var(--sc-yellow);
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .sc-title {
+    font-size: 16vw;
+  }
+
+
+  .sc-performance-title h2 {
+    font-size: 25vw;
+  }
+
+
+  .sc-system-items > div {
+    grid-template-columns:
+      40px 1fr;
+  }
+
+
+  .sc-closing-small {
+    flex-direction: column;
+  }
+
+}
