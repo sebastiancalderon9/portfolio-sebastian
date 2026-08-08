@@ -4,6 +4,8 @@ import {
   useRef
 } from 'react'
 
+import sebastianPhoto from "./assets/profile/sebastian.png";
+
 import {
   Routes,
   Route,
@@ -332,82 +334,50 @@ function Home() {
           HERO
       =================================== */}
 
-      <main
-        className="hero"
-        id="top"
-      >
+      <div className="hero-content">
+  <div className="hero-main">
+    <div className="hero-copy">
+      <div className="eyebrow">
+        GESTOR DE REDES SOCIALES · ESTRATEGA CREATIVO
+      </div>
 
-        <div className="hero-glow glow-one"></div>
+      <h1>
+        <span>SEBASTIÁN</span>
+        <span className="outline-text">CALDERÓN</span>
+      </h1>
 
-        <div className="hero-glow glow-two"></div>
+      <div className="hero-bottom">
+        <p className="hero-description">
+          Creo ideas, contenido y estrategias digitales que hacen
+          que las marcas llamen la atención, conecten y generen
+          resultados.
+        </p>
 
-
-        <div className="hero-topline">
-
-          <span>
-            MEDELLÍN, COLOMBIA
-          </span>
-
-          <span>
-            AVAILABLE FOR NEW PROJECTS
-          </span>
-
+        <div className="hero-statement">
+          <span>YO CREO.</span>
+          <span>ELABORO ESTRATEGIAS.</span>
+          <strong>YO LO HAGO FUNCIONAR.</strong>
         </div>
+      </div>
+    </div>
 
+    <div className="hero-portrait-wrapper">
+      <div className="hero-portrait-card">
+        <img
+          src={sebastianPhoto}
+          alt="Sebastián Calderón"
+          className="hero-portrait"
+          loading="eager"
+        />
 
-        <div className="hero-content">
-
-          <p className="eyebrow">
-            SOCIAL MEDIA MANAGER · CREATIVE STRATEGIST
-          </p>
-
-
-          <h1>
-
-            <span>
-              SEBASTIÁN
-            </span>
-
-            <span className="outline-text">
-              CALDERÓN
-            </span>
-
-          </h1>
-
-
-          <div className="hero-bottom">
-
-            <p className="hero-description">
-
-              Creo ideas, contenido y estrategias
-              digitales que hacen que las marcas
-              llamen la atención, conecten
-              y generen resultados.
-
-            </p>
-
-
-            <div className="hero-statement">
-
-              <span>
-                I CREATE.
-              </span>
-
-              <span>
-                I STRATEGIZE.
-              </span>
-
-              <strong>
-                I MAKE IT WORK.
-              </strong>
-
-            </div>
-
-          </div>
-
+        <div className="hero-portrait-badge">
+          <span>MEDELLÍN · COLOMBIA</span>
+          <strong>SOCIAL MEDIA MANAGER</strong>
         </div>
-
-      </main>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
