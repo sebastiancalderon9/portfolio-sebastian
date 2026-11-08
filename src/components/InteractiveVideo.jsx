@@ -4,6 +4,7 @@ import './InteractiveVideo.css'
 
 function InteractiveVideo({
   src,
+  poster,
   label,
   number,
   className = ''
@@ -157,9 +158,10 @@ function InteractiveVideo({
       <video
         ref={videoRef}
         src={src}
+        poster={poster}
         playsInline
         loop
-        preload="metadata"
+        preload="none"
 
         onPlay={() => setPlaying(true)}
 
