@@ -1,6 +1,8 @@
+import { useRef, useState } from 'react'
 import InteractiveVideo from './components/InteractiveVideo'
 
-import sebastianPhoto from './assets/optimized/sebastian.webp'
+import heroVideo from './assets/hero-sebastian.mp4'
+import heroVideoPoster from './assets/hero-sebastian-poster.webp'
 
 import realBlendsCampaign from './assets/realblends/campaign-01.mp4'
 import realBlendsReel from './assets/realblends/reel-01.mp4'
@@ -108,6 +110,27 @@ function SectionTitle({ title, description }) {
 }
 
 function App() {
+  const [isHeroMuted, setIsHeroMuted] = useState(true)
+  const heroVideoRef = useRef(null)
+
+  const toggleHeroSound = () => {
+    const player = heroVideoRef.current
+
+    if (!player) return
+
+    if (isHeroMuted) {
+      player.currentTime = 0
+      player.muted = false
+      player.play()
+      setIsHeroMuted(false)
+      return
+    }
+
+    player.muted = true
+    player.play()
+    setIsHeroMuted(true)
+  }
+
   return (
     <div className="cv-site" id="inicio">
       <header className="site-header">
@@ -137,8 +160,29 @@ function App() {
           </div>
 
           <figure className="hero-portrait-panel">
-            <img src={sebastianPhoto} alt="Sebastián Calderón" fetchPriority="high" />
-            <figcaption>Comunicación, estrategia y ejecución digital.</figcaption>
+            <div className="hero-video-frame">
+              <video
+                ref={heroVideoRef}
+                autoPlay
+                loop={isHeroMuted}
+                muted={isHeroMuted}
+                playsInline
+                preload="metadata"
+                poster={heroVideoPoster}
+                aria-label="Video de presentación de Sebastián Calderón"
+              >
+                <source src={heroVideo} type="video/mp4" />
+              </video>
+              <button
+                className="hero-video-control"
+                type="button"
+                onClick={toggleHeroSound}
+                aria-pressed={!isHeroMuted}
+              >
+                {isHeroMuted ? 'Escuchar presentación' : 'Silenciar presentación'}
+              </button>
+            </div>
+            <figcaption>Presentación personal</figcaption>
           </figure>
         </section>
 
